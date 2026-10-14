@@ -34,4 +34,5 @@ Add the custom domain in the hosting dashboard before creating its DNS record. U
 WhatsApp/phone: +601155823072
 Email: zeroinspection55@gmail.com
 
-The property graphic and report overview are illustrations, not customer photographs or actual inspection results. English content is supplied; the website states that customer support is available in English, Chinese and Malay.
+The property graphic and report overview are illustrations, not customer photographs or actual inspection results. Visitors can switch the full page between English, Simplified Chinese and Bahasa Melayu. The selected language is remembered in this browser when local storage is available. WhatsApp enquiry messages change with the selected language. The replacement generated hero image is awaiting customer approval and is not included in this website.
+

@@ -1,0 +1,95 @@
+// Each entry contains English, Simplified Chinese and Bahasa Melayu.
+const translations = [
+['Skip to content','跳至主要内容','Langkau ke kandungan'],
+['Menu','菜单','Menu'],['Services','服务','Perkhidmatan'],['Packages','配套','Pakej'],['Our process','验房流程','Proses kami'],['FAQs','常见问题','Soalan lazim'],['Talk to an inspector','咨询验房人员','Hubungi pemeriksa'],
+['KUALA LUMPUR & SELANGOR','吉隆坡与雪兰莪','KUALA LUMPUR & SELANGOR'],
+['A closer look.','细看每一处。','Periksa dengan teliti.'],['A clearer','让您做出','Buat keputusan'],['decision.','明智决定。','dengan yakin.'],
+['Your property deserves more than a quick walkthrough. We inspect the details, document the defects, and help you understand your next step.','您的房产值得细致检查。我们检查细节、记录缺陷，并协助您了解下一步该如何处理。','Hartanah anda memerlukan lebih daripada tinjauan ringkas. Kami memeriksa butiran, merekodkan kecacatan dan membantu anda memahami langkah seterusnya.'],
+['Discuss your property','咨询房产检查','Bincangkan hartanah anda'],['Explore inspections','了解验房配套','Lihat pakej pemeriksaan'],['For new homes, subsale properties & commercial spaces.','适用于新房、二手房及商业单位。','Untuk rumah baharu, hartanah subsale dan ruang komersial.'],
+['THE DETAILS MAKE THE DIFFERENCE','细节决定品质','BUTIRAN MEMBUAT PERBEZAAN'],['Finishes & fixtures','装修与配件','Kemasan & kelengkapan'],['Water flow & drainage','水流与排水','Aliran air & saliran'],['A SYSTEMATIC LOOK AT YOUR SPACE','系统化检查您的房产','PEMERIKSAAN SISTEMATIK RUANG ANDA'],
+['PHOTO-DOCUMENTED FINDINGS','照片记录检查结果','DAPATAN DIREKOD DENGAN FOTO'],['REMOVABLE DEFECT TAGGING','可移除的缺陷标记','PENANDA KECACATAN BOLEH DITANGGALKAN'],['DEVELOPER SUBMISSION GUIDANCE','发展商提交指导','PANDUAN PENYERAHAN KEPADA PEMAJU'],
+['01 / YOUR PROPERTY, OUR FOCUS','01 / 专注您的房产','01 / HARTANAH ANDA, TUMPUAN KAMI'],['Clarity at every','在房产的每个阶段，','Kejelasan pada setiap'],['property milestone.','了解真实状况。','peringkat hartanah.'],
+['From receiving your keys to evaluating your next purchase, choose an inspection suited to your property.','从领取钥匙到评估下一次购房，选择适合您房产的检查服务。','Daripada menerima kunci hingga menilai pembelian seterusnya, pilih pemeriksaan yang sesuai untuk hartanah anda.'],
+['VP & pre-handover','交屋与新房检查（VP）','VP & sebelum penyerahan'],
+['For newly completed properties. Document visible defects and prepare for developer submission before your next handover step.','适用于新竣工房产。记录可见缺陷，并为向发展商提交缺陷报告做好准备。','Untuk hartanah yang baru siap. Rekodkan kecacatan yang kelihatan dan sediakan maklumat untuk penyerahan kepada pemaju sebelum langkah serahan seterusnya.'],
+['NEW HOMES & CONDO UNITS','新房与公寓单位','RUMAH BAHARU & UNIT KONDOMINIUM'],['Subsale property','二手房检查','Hartanah subsale'],
+['Understand the condition of a second-hand property, with attention to signs of structural issues and finishing defects.','了解二手房的状况，重点关注结构问题的迹象与装修缺陷。','Fahami keadaan hartanah subsale dengan tumpuan pada tanda masalah struktur dan kecacatan kemasan.'],
+['BUYERS & PROPERTY INVESTORS','购房者与房产投资者','PEMBELI & PELABUR HARTANAH'],['Commercial spaces','商业单位检查','Ruang komersial'],
+['Inspections for offices, retail spaces and shoplots, with attention to safety, compliance-related concerns and finishing defects.','适用于办公室、零售空间与店屋，关注安全、合规相关问题及装修缺陷。','Pemeriksaan pejabat, ruang runcit dan lot kedai dengan perhatian pada keselamatan, perkara berkaitan pematuhan dan kecacatan kemasan.'],
+['OFFICES, RETAIL & SHOPLOTS','办公室、零售空间与店屋','PEJABAT, RUANG RUNCIT & LOT KEDAI'],
+['02 / CHOOSE YOUR INSPECTION','02 / 选择验房配套','02 / PILIH PEMERIKSAAN ANDA'],['The right depth.','合适的检查范围。','Skop yang sesuai.'],['For your property.','为您的房产而设。','Untuk hartanah anda.'],
+['Tell us your property type and floor area. We’ll guide you to an appropriate scope and provide a personalised quotation.','告诉我们房产类型与面积。我们将建议合适的检查范围，并提供专属报价。','Beritahu kami jenis dan keluasan hartanah anda. Kami akan mencadangkan skop yang sesuai serta memberikan sebut harga khusus.'],
+['THE ESSENTIAL CHECK','基础检查','PEMERIKSAAN ASAS'],['Standard','标准','Standard'],['Inspection','检查','Pemeriksaan'],
+['A systematic inspection of the key finishes and systems in your property.','系统化检查房产的主要装修与设施系统。','Pemeriksaan sistematik kemasan utama dan sistem dalam hartanah anda.'],
+['Ceilings, walls & floors','天花板、墙壁与地板','Siling, dinding & lantai'],['Tiles, including hollow checks','瓷砖，包括空鼓检查','Jubin, termasuk pemeriksaan lompong'],['Doors & windows','门与窗','Pintu & tingkap'],['Plumbing & electrical system','水管与电气系统','Sistem paip & elektrik'],
+['Typical duration: 1–2 hours for around 1,000 sqft.','约1,000平方英尺的单位通常需1至2小时。','Tempoh biasa: 1–2 jam untuk kira-kira 1,000 kaki persegi.'],['Enquire about Standard ↗','咨询标准检查 ↗','Tanya tentang Standard ↗'],
+['RECOMMENDED FOR MOST CONDO UNITS','多数公寓单位的推荐配套','DISYORKAN UNTUK KEBANYAKAN UNIT KONDOMINIUM'],['GO BEYOND THE SURFACE','深入检查排水表现','PERIKSA LEBIH DARIPADA PERMUKAAN'],['Water Ponding','排水蓄水测试','Ujian Takungan Air'],
+['Everything in Standard, with an additional check on water flow and drainage performance.','包含标准检查的所有项目，并额外检查水流与排水表现。','Merangkumi semua dalam Standard, dengan pemeriksaan tambahan aliran air dan prestasi saliran.'],
+['Full Standard Inspection scope','完整标准检查范围','Skop penuh Pemeriksaan Standard'],['Water ponding test','排水蓄水测试','Ujian takungan air'],['Water flow & drainage checks','水流与排水检查','Pemeriksaan aliran air & saliran'],
+['A ponding test checks drainage flow. It is not a waterproofing test.','此蓄水测试用于检查排水与水流，不是防水测试。','Ujian takungan air memeriksa aliran saliran. Ia bukan ujian kalis air.'],['Enquire about Water Ponding ↗','咨询排水蓄水测试检查 ↗','Tanya tentang Ujian Takungan Air ↗'],
+['A MORE COMPLETE ASSESSMENT','更全面的评估','PENILAIAN LEBIH MENYELURUH'],['Comprehensive','全面','Menyeluruh'],
+['Our extended scope combines the Standard Inspection with drainage and waterproofing tests.','扩展检查范围结合标准检查、排水测试与防水测试。','Skop lanjutan kami menggabungkan Pemeriksaan Standard dengan ujian saliran dan kalis air.'],['Waterproofing test','防水测试','Ujian kalis air'],
+['Hand over your key and collect it after 2 days. Access to the unit below is required for inspection on the same day.','交付钥匙后，2天后领取。须安排同一天进入楼下单位进行检查。','Serahkan kunci dan ambil semula selepas 2 hari. Akses ke unit di bawah diperlukan untuk pemeriksaan pada hari yang sama.'],['Enquire about Comprehensive ↗','咨询全面检查 ↗','Tanya tentang Pemeriksaan Menyeluruh ↗'],
+['03 / FROM CHECK TO NEXT STEP','03 / 从检查到下一步','03 / DARIPADA PEMERIKSAAN KE LANGKAH SETERUSNYA'],['Findings you can','清楚的检查结果，','Dapatan untuk'],['act on.','明确的处理方向。','tindakan anda.'],
+['Clear documentation and practical guidance, with support that continues after the inspection.','清晰的记录与实用指导，检查完成后仍持续提供咨询支持。','Dokumentasi yang jelas dan panduan praktikal, dengan sokongan berterusan selepas pemeriksaan.'],['REPORT OVERVIEW','报告概览','GAMBARAN LAPORAN'],['Every detail.','每一处细节。','Setiap butiran.'],['Documented.','完整记录。','Direkodkan.'],['Photo documentation','照片记录','Dokumentasi foto'],['Defect location','缺陷位置','Lokasi kecacatan'],['Submission guidance','提交指导','Panduan penyerahan'],['Illustrative report overview','报告概览示意','Ilustrasi gambaran laporan'],
+['Tell us about your property','告诉我们您的房产资料','Beritahu kami tentang hartanah anda'],
+['Share your location, property type, floor area and preferred timing. We’ll confirm the scope and access arrangements.','提供地点、房产类型、面积与期望时间。我们将确认检查范围及进场安排。','Kongsikan lokasi, jenis hartanah, keluasan dan masa pilihan. Kami akan mengesahkan skop serta aturan akses.'],
+['Inspect & mark the findings','检查并标记缺陷','Periksa & tandakan dapatan'],
+['We carry out the agreed inspection and tag identified defects with removable stickers for easy reference.','我们按约定范围检查，并使用可移除贴纸标记发现的缺陷，方便对照。','Kami menjalankan pemeriksaan yang dipersetujui dan menandakan kecacatan dengan pelekat boleh tanggal untuk rujukan mudah.'],
+['Receive your documentation','接收检查记录','Terima dokumentasi anda'],
+['Soft-copy reporting or app submission within 48 hours, with photo documentation and developer submission guidance.','48小时内提供电子报告或通过应用提交，并附照片记录与发展商提交指导。','Laporan digital atau penyerahan melalui aplikasi dalam 48 jam, dengan dokumentasi foto dan panduan penyerahan kepada pemaju.'],
+['Get guidance on your next step','获取后续处理指导','Dapatkan panduan langkah seterusnya'],
+['Free after-sale advisory support via WhatsApp or phone to help you understand the findings.','通过WhatsApp或电话提供免费售后咨询，协助您了解检查结果。','Khidmat nasihat selepas pemeriksaan secara percuma melalui WhatsApp atau telefon untuk membantu anda memahami dapatan.'],
+['04 / BEFORE YOU BOOK','04 / 预约前须知','04 / SEBELUM ANDA MENEMPAH'],['A little clarity,','预约前，','Maklumat jelas,'],['up front.','先了解清楚。','sebelum bermula.'],
+['Where do you provide inspections?','你们在哪些地区提供检查？','Di manakah pemeriksaan disediakan?'],
+['Our main coverage is Kuala Lumpur and Selangor. Inspections in other states can be arranged with additional transport charges, quoted case by case.','主要服务范围为吉隆坡与雪兰莪。其他州属可安排检查，额外交通费按个案报价。','Liputan utama kami ialah Kuala Lumpur dan Selangor. Pemeriksaan di negeri lain boleh diatur dengan caj pengangkutan tambahan yang disebut harga mengikut kes.'],
+['Is water ponding the same as waterproofing?','排水蓄水测试与防水测试相同吗？','Adakah ujian takungan air sama dengan ujian kalis air?'],
+['No. A water ponding test checks water flow and drainage performance. Waterproofing testing is a separate scope included in the Comprehensive package.','不同。排水蓄水测试检查水流与排水表现。防水测试属于独立项目，包含在全面检查配套中。','Tidak. Ujian takungan air memeriksa aliran air dan prestasi saliran. Ujian kalis air ialah skop berasingan dalam pakej Menyeluruh.'],
+['What do I need to arrange for Comprehensive Inspection?','全面检查需要安排什么？','Apakah aturan untuk Pemeriksaan Menyeluruh?'],
+['You hand over the key and collect it after 2 days. An inspection of the unit below is required on the same day, so access must be coordinated in advance. Contact us to confirm the arrangements.','交付钥匙后2天领取。须在同一天检查楼下单位，因此需提前协调进场。请联系我们确认安排。','Serahkan kunci dan ambil semula selepas 2 hari. Unit di bawah perlu diperiksa pada hari yang sama, jadi akses mesti diatur terlebih dahulu. Hubungi kami untuk mengesahkan aturan.'],
+['What is included in the inspection report?','检查报告包含什么？','Apakah kandungan laporan pemeriksaan?'],
+['Your deliverables include a professional defect report in PDF or app submission, photo documentation and developer submission support guidance. Soft-copy reporting or app submission is provided within 48 hours.','交付内容包括专业缺陷报告（PDF或应用提交）、照片记录及发展商提交指导。电子报告或应用提交将在48小时内提供。','Anda menerima laporan kecacatan profesional dalam PDF atau melalui aplikasi, dokumentasi foto dan panduan penyerahan kepada pemaju. Laporan digital atau penyerahan aplikasi disediakan dalam 48 jam.'],
+['How is the area calculated for landed properties?','有地房产的面积如何计算？','Bagaimanakah keluasan hartanah bertanah dikira?'],
+['The area includes the car porch, backyard and built-in area. Share the property details with us so we can confirm the scope and quotation.','面积包括车棚、后院及建筑面积。请提供房产资料，以便我们确认范围与报价。','Keluasan merangkumi anjung kereta, halaman belakang dan kawasan binaan. Kongsikan butiran hartanah supaya kami dapat mengesahkan skop dan sebut harga.'],
+['Are follow-up visits and report changes included?','后续到访与报告修改包含在内吗？','Adakah lawatan susulan dan pindaan laporan termasuk?'],
+['The quoted inspection covers one visit. A separate revisit caused by customer arrangements, a second inspection, or a second report revision carries an additional charge. We’ll confirm the applicable terms before you proceed.','报价包含一次到访。因客户安排而另行到访、第二次检查或第二次报告修改均需额外收费。我们会在进行前确认适用条款。','Sebut harga meliputi satu lawatan. Lawatan semula akibat aturan pelanggan, pemeriksaan kedua atau pindaan laporan kali kedua dikenakan caj tambahan. Kami akan mengesahkan terma sebelum anda meneruskan.'],
+['Which languages can I use?','可以使用哪些语言沟通？','Bahasa apakah yang boleh saya gunakan?'],['We support English, Chinese and Malay. Let us know your preferred language when you contact us.','我们支持英语、中文与马来语。联系时请告知您的语言偏好。','Kami menyokong bahasa Inggeris, Cina dan Melayu. Beritahu kami bahasa pilihan anda apabila menghubungi kami.'],
+['LET’S TAKE A CLOSER LOOK','一起仔细检查','MARI PERIKSA DENGAN TELITI'],['Your next step','您的下一步，','Langkah seterusnya'],['starts with clarity.','从了解房况开始。','bermula dengan kejelasan.'],['Send your property location, type and floor area.','发送房产地点、类型与面积。','Hantar lokasi, jenis dan keluasan hartanah anda.'],['We’ll help you choose the right inspection.','我们协助您选择合适的检查配套。','Kami membantu anda memilih pemeriksaan yang sesuai.'],['Chat on WhatsApp','通过WhatsApp咨询','Hubungi melalui WhatsApp'],['CONTACT','联系方式','HUBUNGI KAMI'],['WORKING HOURS','营业时间','WAKTU OPERASI'],['Monday – Friday','星期一至星期五','Isnin – Jumaat'],['9am – 5pm','上午9时至下午5时','9 pagi – 5 petang'],['Saturday','星期六','Sabtu'],['9am – 1pm','上午9时至下午1时','9 pagi – 1 petang'],['Sunday & public holidays','星期日与公共假期','Ahad & cuti umum'],['Closed','休息','Tutup'],['COVERAGE','服务范围','LIPUTAN'],['Kuala Lumpur & Selangor','吉隆坡与雪兰莪','Kuala Lumpur & Selangor'],['Other states by arrangement.','其他州属可另行安排。','Negeri lain mengikut aturan.'],['PROPERTY INSPECTION. CLEARLY.','专业验房，清楚了解。','PEMERIKSAAN HARTANAH. DENGAN JELAS.'],['Back to top ↑','返回顶部 ↑','Kembali ke atas ↑']
+];
+const translationMap = new Map(translations.map(row => [row[0], row]));
+const textNodes = [];
+const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+while (walker.nextNode()) {
+  const node = walker.currentNode;
+  if (node.parentElement.closest('script, style, svg, .language-switcher')) continue;
+  const key = node.textContent.trim();
+  if (translationMap.has(key)) textNodes.push({node, key, prefix: node.textContent.match(/^\s*/)[0], suffix: node.textContent.match(/\s*$/)[0]});
+}
+const languageIndex = {en:0, 'zh-Hans':1, ms:2};
+const titles = ['Zero Inspection | Property Inspection in Kuala Lumpur & Selangor','Zero Inspection | 吉隆坡与雪兰莪专业验房服务','Zero Inspection | Pemeriksaan Hartanah Kuala Lumpur & Selangor'];
+const enquiry = {
+  en: ['Hi Zero Inspection, I would like to enquire about a property inspection.','Hi Zero Inspection, please advise on the Standard Inspection package.','Hi Zero Inspection, I am interested in Water Ponding Inspection for my property.','Hi Zero Inspection, please advise on Comprehensive Inspection and the access arrangements.','Hi Zero Inspection.\nProperty location: \nProperty type: \nFloor area (sqft): \nPreferred date: '],
+  'zh-Hans': ['您好，Zero Inspection，我想咨询房产检查服务。','您好，我想咨询标准检查配套。','您好，我想了解排水蓄水测试检查配套。','您好，我想咨询全面检查配套及进场安排。','您好，Zero Inspection。\n房产地点：\n房产类型：\n面积（平方英尺）：\n期望日期：'],
+  ms: ['Hai Zero Inspection, saya ingin bertanya tentang pemeriksaan hartanah.','Hai, saya ingin bertanya tentang pakej Pemeriksaan Standard.','Hai, saya berminat dengan pemeriksaan Ujian Takungan Air.','Hai, saya ingin bertanya tentang Pemeriksaan Menyeluruh dan aturan akses.','Hai Zero Inspection.\nLokasi hartanah: \nJenis hartanah: \nKeluasan (kaki persegi): \nTarikh pilihan: ']
+};
+function setLanguage(language) {
+  if (!(language in languageIndex)) language = 'en';
+  const index = languageIndex[language];
+  textNodes.forEach(({node,key,prefix,suffix}) => {node.textContent = prefix + translationMap.get(key)[index] + suffix;});
+  document.documentElement.lang = language;
+  document.title = titles[index];
+  document.querySelector('meta[name="description"]').content = translationMap.get('Your property deserves more than a quick walkthrough. We inspect the details, document the defects, and help you understand your next step.')[index];
+  document.querySelector('meta[property="og:title"]').content = titles[index];
+  document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content;
+  document.querySelector('.brand').setAttribute('aria-label', ['Zero Inspection home','Zero Inspection 首页','Laman utama Zero Inspection'][index]);
+  document.querySelector('.brand img').alt = ['Zero Inspection — property inspection','Zero Inspection — 专业验房','Zero Inspection — pemeriksaan hartanah'][index];
+  document.querySelectorAll('.language-switcher button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach((link,i) => {link.href = 'https://wa.me/601155823072?text=' + encodeURIComponent(enquiry[language][i]);});
+  const labels = [['Main navigation','主要导航','Navigasi utama'],['Illustrative defect report','缺陷报告示意','Ilustrasi laporan kecacatan'],['Illustration of a property inspection showing a room and inspection checkpoints','房产与检查点示意图','Ilustrasi ruang hartanah dan titik pemeriksaan']];
+  ['#navigation','.report-illustration','.property-art'].forEach((selector,i) => document.querySelector(selector)?.setAttribute('aria-label', labels[i][index]));
+  try {localStorage.setItem('zero-inspection-language',language);} catch {}
+}
+document.querySelectorAll('.language-switcher button').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+let savedLanguage = 'en';
+try {savedLanguage = localStorage.getItem('zero-inspection-language') || 'en';} catch {}
+setLanguage(savedLanguage);
