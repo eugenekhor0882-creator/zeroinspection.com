@@ -70,7 +70,7 @@ while (walker.nextNode()) {
   if (translationMap.has(key)) textNodes.push({node, key, prefix: node.textContent.match(/^\s*/)[0], suffix: node.textContent.match(/\s*$/)[0]});
 }
 const languageIndex = {en:0, 'zh-Hans':1, ms:2};
-const titles = ['Zero Inspection | Property Inspection in Kuala Lumpur & Selangor','Zero Inspection | 吉隆坡与雪兰莪专业验房服务','Zero Inspection | Pemeriksaan Hartanah Kuala Lumpur & Selangor'];
+const titles = ['Zero Inspection | Property Inspection KL & Selangor','Zero Inspection | 吉隆坡与雪兰莪专业验房','Zero Inspection | Pemeriksaan Hartanah KL & Selangor'];
 const enquiry = {
   en: ['Hi Zero Inspection, I would like to enquire about a property inspection.','Hi Zero Inspection, please advise on the Standard Inspection package.','Hi Zero Inspection, I am interested in Water Ponding Inspection for my property.','Hi Zero Inspection, please advise on Comprehensive Inspection and the access arrangements.','Hi Zero Inspection.\nProperty location: \nProperty type: \nFloor area (sqft): \nPreferred date: '],
   'zh-Hans': ['您好，Zero Inspection，我想咨询房产检查服务。','您好，我想咨询标准检查配套。','您好，我想了解排水蓄水测试检查配套。','您好，我想咨询全面检查配套及进场安排。','您好，Zero Inspection。\n房产地点：\n房产类型：\n面积（平方英尺）：\n期望日期：'],
@@ -98,7 +98,16 @@ function setLanguage(language) {
   ['#navigation','.report-illustration','.property-art'].forEach((selector,i) => document.querySelector(selector)?.setAttribute('aria-label', labels[i][index]));
   try {localStorage.setItem('zero-inspection-language',language);} catch {}
 }
-document.querySelector('#language-select').addEventListener('change', event => setLanguage(event.target.value));
+document.querySelector('#language-select').addEventListener('change', event => {
+  const language = event.target.value;
+  setLanguage(language);
+  // Static locale URLs let search engines index each language independently.
+  // Local downloaded previews still change immediately without navigation.
+  if (typeof location !== 'undefined' && /^https?:$/.test(location.protocol)) {
+    const link = document.querySelector('.locale-links a[lang="' + language + '"]');
+    if (link) location.assign(link.href);
+  }
+});
 let savedLanguage = 'en';
 savedLanguage = document.documentElement.lang || 'en';
 setLanguage(savedLanguage);
