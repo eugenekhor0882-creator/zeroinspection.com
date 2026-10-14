@@ -22,7 +22,7 @@ Select this repository, choose no framework, use `exit 0` as the build command a
 
 ## Domain
 
-The intended domain is `www.zeroinspection.com`. Its registration/expiry has not been verified. Check the WordPress.com account that purchased it before changing DNS or renewing. Never share your account password.
+The intended domain is `www.zero-inspection.com`. Its registration/expiry has not been verified. Check the WordPress.com account that purchased it before changing DNS or renewing. Never share your account password.
 
 To connect a Cloudflare Pages custom domain, follow:
 https://developers.cloudflare.com/pages/configuration/custom-domains/
@@ -39,4 +39,4 @@ The property graphic and report overview are illustrations, not customer photogr
 
 ## Search setup
 
-English, Chinese and Malay have static pages at /, /zh/ and /ms/. Canonical URLs, language alternatives, robots.txt and sitemap.xml currently target https://www.zeroinspection.com/. Confirm that this is the final live hostname before deployment. Submit the sitemap in Google Search Console after the domain is connected. No search ranking or indexing is guaranteed.
+English, Chinese and Malay have static pages at /, /zh/ and /ms/. Canonical URLs, language alternatives, robots.txt and sitemap.xml currently target https://www.zero-inspection.com/. Confirm that this is the final live hostname before deployment. Submit the sitemap in Google Search Console after the domain is connected. No search ranking or indexing is guaranteed.
