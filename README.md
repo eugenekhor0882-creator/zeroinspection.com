@@ -34,5 +34,9 @@ Add the custom domain in the hosting dashboard before creating its DNS record. U
 WhatsApp/phone: +601155823072
 Email: zeroinspection55@gmail.com
 
-The property graphic and report overview are illustrations, not customer photographs or actual inspection results. Visitors can switch the full page between English, Simplified Chinese and Bahasa Melayu. The selected language is remembered in this browser when local storage is available. WhatsApp enquiry messages change with the selected language. The replacement generated hero image is awaiting customer approval and is not included in this website.
+The property graphic and report overview are illustrations, not customer photographs or actual inspection results. Visitors can switch the full page between English, Simplified Chinese and Bahasa Melayu. The selected language is remembered in this browser when local storage is available. WhatsApp enquiry messages change with the selected language. The approved inspection overview is included, with website text labels that translate with the page. Facebook, Instagram and TikTok profile links are supplied by the business. Nationwide home and business internet application assistance is listed separately from inspection services.
 
+
+## Search setup
+
+English, Chinese and Malay have static pages at /, /zh/ and /ms/. Canonical URLs, language alternatives, robots.txt and sitemap.xml currently target https://www.zeroinspection.com/. Confirm that this is the final live hostname before deployment. Submit the sitemap in Google Search Console after the domain is connected. No search ranking or indexing is guaranteed.
