@@ -1,3 +1,7 @@
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: *
 Allow: /
+
 Sitemap: https://www.zero-inspection.com/sitemap.xml
